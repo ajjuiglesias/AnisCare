@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #325238;
+  --color-primary-light: #4c7353;
+  --color-primary-dark: #1f3624;
+  --color-primary-50: #f2f7f3;
+  --color-primary-100: #e2ede4;
+  --color-primary-200: #c6dec9;
+  
+  --color-accent: #c5b430;
+  --color-accent-light: #e5d552;
+  --color-accent-dark: #9e8f1d;
+  --color-accent-bg: #f8f4dc;
+  
+  --color-cream: #faf8f3;
+  --color-cream-dark: #f0ece0;
+  --color-warm-gray: #636662;
+  --color-dark: #191c1a;
+  
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, sans-serif;
+}
+
+:root {
+  --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-body: var(--font-inter), "Inter", -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* Headings font helper */
+.font-display {
+  font-family: var(--font-heading);
+}
+
+/* Standardized Section Badge */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background-color: #f2f7f3;
+  color: #325238;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: 1px solid #e2ede4;
+}
+
+.section-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #325238;
+  border-radius: 9999px;
+}
+
+/* Primary Pill CTA Button (Demo 1 inspired) */
+.btn-pill-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #c5b430;
+  color: #191c1a;
+  font-weight: 600;
+  font-size: 0.925rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(197, 180, 48, 0.25);
+}
+
+.btn-pill-accent:hover {
+  background-color: #b5a428;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(197, 180, 48, 0.35);
+}
+
+.btn-pill-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  color: #191c1a;
+  font-weight: 600;
+  font-size: 0.925rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  border: 1.5px solid #191c1a;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-pill-outline:hover {
+  background-color: #191c1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #ffffff;
+  color: #1f3624;
+  font-weight: 600;
+  font-size: 0.925rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-pill-white:hover {
+  background-color: #faf8f3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtle Card Hover */
+.care-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.care-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(50, 82, 56, 0.08);
+  border-color: #c6dec9;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf8f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #c6dec9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4c7353;
+}
