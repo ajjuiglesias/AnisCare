@@ -44,20 +44,22 @@ export default function Navbar() {
   return (
     <header
       id="main-header"
-      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center px-4 sm:px-6 lg:px-8 ${
-        isScrolled ? "top-3 sm:top-5" : "top-0 py-5 sm:py-7"
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center ${
+        isScrolled
+          ? "top-3 sm:top-5 px-4 sm:px-6"
+          : "top-0 py-5 sm:py-7 px-4 sm:px-8 lg:px-16"
       } ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "-translate-y-28 opacity-0 pointer-events-none"
       }`}
     >
-      {/* Floating Island Container on Scroll */}
+      {/* Navbar Container */}
       <div
-        className={`w-full max-w-[1500px] mx-auto flex items-center justify-between transition-all duration-300 ${
+        className={`w-full mx-auto flex items-center justify-between transition-all duration-300 ${
           isScrolled
-            ? "bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-5 sm:px-8 shadow-2xl max-w-[1350px]"
-            : "bg-transparent py-0 px-2 sm:px-4"
+            ? "max-w-5xl xl:max-w-6xl bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-5 sm:px-7 shadow-2xl"
+            : "max-w-[1500px] bg-transparent py-0 px-0"
         }`}
       >
         
@@ -81,7 +83,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav Links */}
-        <nav id="desktop-nav" className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <nav id="desktop-nav" className="hidden lg:flex items-center gap-5 xl:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -110,7 +112,7 @@ export default function Navbar() {
           <a
             href="#contact"
             id="nav-cta"
-            className="inline-flex items-center gap-2.5 sm:gap-3 bg-white hover:bg-white/95 text-[#0a1615] font-extrabold text-xs tracking-wider uppercase py-2 sm:py-2.5 pl-5 sm:pl-6 pr-2 rounded-full shadow-lg transition-all duration-200 hover:scale-[1.03]"
+            className="inline-flex items-center gap-2 sm:gap-2.5 bg-white hover:bg-white/95 text-[#0a1615] font-extrabold text-xs tracking-wider uppercase py-2 sm:py-2.5 pl-5 pr-2 rounded-full shadow-lg transition-all duration-200 hover:scale-[1.03]"
           >
             <span>CONTACT US</span>
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#0a1615] text-[#c8e600] flex items-center justify-center text-xs font-mono font-bold">
