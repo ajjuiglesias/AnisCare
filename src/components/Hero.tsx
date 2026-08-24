@@ -6,24 +6,24 @@ export default function Hero() {
       id="hero"
       className="relative w-full min-h-[100dvh] sm:min-h-[750px] lg:min-h-[850px] max-h-[1100px] flex flex-col justify-end overflow-hidden bg-[#0a1615]"
     >
-      {/* Background Image: Carefully positioned for mobile and desktop */}
+      {/* Background Image: Centered on the characters (Nurse & Senior) across mobile and desktop */}
       <Image
         src="/images/hero-banner.jpg"
         alt="Compassionate nurse standing behind smiling senior man"
         fill
         priority
-        className="object-cover object-[78%_15%] sm:object-[70%_22%] md:object-[65%_28%] lg:object-[60%_35%]"
+        className="object-cover object-[52%_10%] sm:object-[60%_20%] md:object-[60%_25%] lg:object-[60%_35%]"
         sizes="100vw"
       />
 
-      {/* Responsive Gradient Overlays: Ensures faces are visible at the top, text is readable at the bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1615] via-[#0a1615]/70 sm:via-[#0a1615]/50 to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1615]/90 via-[#0a1615]/40 to-transparent pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0a1615]/80 to-transparent pointer-events-none" />
+      {/* Gradients: Clear upper/middle area on mobile so characters are bright and visible, darkening at bottom for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1615] via-[#0a1615]/35 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1615]/80 via-transparent to-transparent sm:from-[#0a1615]/90 sm:via-[#0a1615]/40 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-[#0a1615]/50 to-transparent sm:from-[#0a1615]/70 pointer-events-none" />
 
       {/* Hero Content Area */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-8 sm:pb-12 lg:pb-16">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-8 sm:pb-12 lg:pb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8 lg:gap-14">
           
           {/* Left Column: Tag, Headline, Subtext, CTA Button */}
           <div className="flex flex-col items-start max-w-xl lg:max-w-2xl">
