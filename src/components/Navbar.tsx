@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <header
       id="main-header"
-      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center px-6 sm:px-10 lg:px-16 ${
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center px-4 sm:px-6 lg:px-8 ${
         isScrolled
           ? "top-3 sm:top-5"
           : "top-0 py-6 sm:py-8"
@@ -54,11 +54,11 @@ export default function Navbar() {
           : "-translate-y-28 opacity-0 pointer-events-none"
       }`}
     >
-      {/* Navbar Container matching exact content max-w-[1500px] */}
+      {/* Navbar Container matching standard max-w-7xl content width */}
       <div
-        className={`w-full max-w-[1500px] mx-auto flex items-center justify-between transition-all duration-300 ${
+        className={`w-full max-w-7xl mx-auto flex items-center justify-between transition-all duration-300 ${
           isScrolled
-            ? "bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-6 sm:px-8 shadow-2xl"
+            ? "bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-5 sm:px-8 shadow-2xl"
             : "bg-transparent py-0 px-0"
         }`}
       >
@@ -151,7 +151,7 @@ export default function Navbar() {
       {isMobileOpen && (
         <div
           id="mobile-menu"
-          className="lg:hidden fixed top-20 left-6 right-6 bg-[#0a1615]/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 shadow-2xl z-50 max-w-[1500px] mx-auto"
+          className="lg:hidden fixed top-20 left-4 right-4 bg-[#0a1615]/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 shadow-2xl z-50 max-w-7xl mx-auto"
         >
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (

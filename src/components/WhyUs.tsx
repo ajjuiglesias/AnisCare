@@ -60,7 +60,7 @@ const columnsData = [
 export default function WhyUs() {
   return (
     <section id="why-us" className="w-full py-20 lg:py-28 bg-white border-b border-[#e8e4d8]">
-      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">

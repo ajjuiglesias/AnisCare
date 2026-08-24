@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id="main-footer" className="w-full bg-[#0a1615] text-white border-t border-white/10">
       {/* Main Footer Container */}
-      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           
           {/* Brand & Newsletter: 4 cols */}

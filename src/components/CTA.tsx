@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CTA() {
   return (
     <section id="contact" className="w-full py-20 lg:py-28 bg-[#f7f5ee]">
-      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="relative bg-gradient-to-br from-[#0a1615] via-[#10221e] to-[#0a1615] text-white rounded-[2.5rem] lg:rounded-[3rem] p-8 sm:p-14 lg:p-20 shadow-2xl overflow-hidden border border-white/10">
           

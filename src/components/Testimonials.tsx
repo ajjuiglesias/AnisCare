@@ -92,7 +92,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="w-full py-20 lg:py-28 bg-[#f7f5ee] border-b border-[#e8e4d8]">
-      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Centered Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
