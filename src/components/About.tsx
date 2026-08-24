@@ -10,7 +10,7 @@ const stats = [
 export default function About() {
   return (
     <section id="about" className="w-full py-20 lg:py-28 bg-white border-b border-[#e2ede4]/60">
-      <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16">
         
         {/* Top Tag: WHO WE ARE (Demo 1 Style) */}
         <div className="inline-flex items-center gap-2 mb-10 text-[#191c1a] text-xs font-extrabold uppercase tracking-widest">

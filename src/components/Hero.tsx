@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0a1615]/80 to-transparent pointer-events-none" />
 
       {/* Hero Content Area */}
-      <div className="relative z-10 w-full max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-16 pt-28 sm:pt-32 pb-8 sm:pb-12 lg:pb-16">
+      <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16 pt-28 sm:pt-32 pb-8 sm:pb-12 lg:pb-16">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-14">
           
           {/* Left Column: Tag, Headline, Subtext, CTA Button */}

@@ -44,22 +44,22 @@ export default function Navbar() {
   return (
     <header
       id="main-header"
-      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center ${
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 flex justify-center px-6 sm:px-10 lg:px-16 ${
         isScrolled
-          ? "top-3 sm:top-5 px-4 sm:px-6"
-          : "top-0 py-5 sm:py-7 px-4 sm:px-8 lg:px-16"
+          ? "top-3 sm:top-5"
+          : "top-0 py-6 sm:py-8"
       } ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "-translate-y-28 opacity-0 pointer-events-none"
       }`}
     >
-      {/* Navbar Container */}
+      {/* Navbar Container matching exact content max-w-[1500px] */}
       <div
-        className={`w-full mx-auto flex items-center justify-between transition-all duration-300 ${
+        className={`w-full max-w-[1500px] mx-auto flex items-center justify-between transition-all duration-300 ${
           isScrolled
-            ? "max-w-5xl xl:max-w-6xl bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-5 sm:px-7 shadow-2xl"
-            : "max-w-[1500px] bg-transparent py-0 px-0"
+            ? "bg-[#0a1615]/90 backdrop-blur-xl border border-white/15 rounded-full py-2.5 sm:py-3 px-6 sm:px-8 shadow-2xl"
+            : "bg-transparent py-0 px-0"
         }`}
       >
         
@@ -83,7 +83,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav Links */}
-        <nav id="desktop-nav" className="hidden lg:flex items-center gap-5 xl:gap-7">
+        <nav id="desktop-nav" className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -112,7 +112,7 @@ export default function Navbar() {
           <a
             href="#contact"
             id="nav-cta"
-            className="inline-flex items-center gap-2 sm:gap-2.5 bg-white hover:bg-white/95 text-[#0a1615] font-extrabold text-xs tracking-wider uppercase py-2 sm:py-2.5 pl-5 pr-2 rounded-full shadow-lg transition-all duration-200 hover:scale-[1.03]"
+            className="inline-flex items-center gap-2.5 sm:gap-3 bg-white hover:bg-white/95 text-[#0a1615] font-extrabold text-xs tracking-wider uppercase py-2 sm:py-2.5 pl-5 sm:pl-6 pr-2 rounded-full shadow-lg transition-all duration-200 hover:scale-[1.03]"
           >
             <span>CONTACT US</span>
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#0a1615] text-[#c8e600] flex items-center justify-center text-xs font-mono font-bold">
@@ -151,7 +151,7 @@ export default function Navbar() {
       {isMobileOpen && (
         <div
           id="mobile-menu"
-          className="lg:hidden fixed top-20 left-4 right-4 bg-[#0a1615]/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 shadow-2xl z-50"
+          className="lg:hidden fixed top-20 left-6 right-6 bg-[#0a1615]/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 shadow-2xl z-50 max-w-[1500px] mx-auto"
         >
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (
