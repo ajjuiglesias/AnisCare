@@ -6,30 +6,30 @@ export default function Hero() {
       id="hero"
       className="relative w-full min-h-[100dvh] sm:min-h-[750px] lg:min-h-[850px] max-h-[1100px] flex flex-col justify-end overflow-hidden bg-[#0a1615]"
     >
-      {/* Background Image: Centered on the characters (Nurse & Senior) across mobile and desktop */}
+      {/* Background Image: Positioned at 68% 12% on mobile so both the nurse and senior man faces are fully visible */}
       <Image
         src="/images/hero-banner.jpg"
-        alt="Compassionate nurse standing behind smiling senior man"
+        alt="Compassionate nurse standing behind smiling senior man holding juice"
         fill
         priority
-        className="object-cover object-[52%_10%] sm:object-[60%_20%] md:object-[60%_25%] lg:object-[60%_35%]"
+        className="object-cover object-[68%_12%] sm:object-[64%_20%] md:object-[62%_25%] lg:object-[60%_35%]"
         sizes="100vw"
       />
 
       {/* Gradients: Clear upper/middle area on mobile so characters are bright and visible, darkening at bottom for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1615] via-[#0a1615]/35 to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1615]/80 via-transparent to-transparent sm:from-[#0a1615]/90 sm:via-[#0a1615]/40 pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-[#0a1615]/50 to-transparent sm:from-[#0a1615]/70 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1615] via-[#0a1615]/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1615]/75 via-transparent to-transparent sm:from-[#0a1615]/90 sm:via-[#0a1615]/40 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#0a1615]/40 to-transparent sm:from-[#0a1615]/70 pointer-events-none" />
 
       {/* Hero Content Area */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-8 sm:pb-12 lg:pb-16">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8 lg:gap-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-32 pb-6 sm:pb-12 lg:pb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 sm:gap-8 lg:gap-14">
           
           {/* Left Column: Tag, Headline, Subtext, CTA Button */}
           <div className="flex flex-col items-start max-w-xl lg:max-w-2xl">
             
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center gap-2 mb-3 sm:mb-4 text-[#c8e600] text-[0.65rem] sm:text-xs font-extrabold uppercase tracking-widest bg-[#0a1615]/60 backdrop-blur-xs px-3 py-1 rounded-full border border-white/10 sm:border-0 sm:p-0 sm:bg-transparent">
+            <div className="inline-flex items-center gap-2 mb-2.5 sm:mb-4 text-[#c8e600] text-[0.65rem] sm:text-xs font-extrabold uppercase tracking-widest bg-[#0a1615]/70 backdrop-blur-xs px-3 py-1 rounded-full border border-white/10 sm:border-0 sm:p-0 sm:bg-transparent">
               <span className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-xs bg-[#c8e600] text-[#0a1615] flex items-center justify-center text-[0.6rem] sm:text-[0.65rem] font-black">
                 +
               </span>
@@ -37,7 +37,7 @@ export default function Hero() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.75rem] xl:text-[4.25rem] text-white font-medium leading-[1.12] tracking-tight mb-3 sm:mb-4">
+            <h1 className="font-serif text-[2rem] leading-[1.12] sm:text-4xl md:text-5xl lg:text-[3.75rem] xl:text-[4.25rem] text-white font-medium tracking-tight mb-2.5 sm:mb-4">
               Senior support built<br />
               on safety trust and<br />
               <span className="italic font-normal text-white">
@@ -46,19 +46,19 @@ export default function Hero() {
             </h1>
 
             {/* Subtext */}
-            <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-lg leading-relaxed mb-6 font-normal">
+            <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-lg leading-relaxed mb-5 sm:mb-6 font-normal">
               Nurse-led in-home care helping Northern Virginia seniors live safely with dignity, comfort, and independence every single day.
             </p>
 
             {/* Action CTAs */}
-            <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 w-full sm:w-auto">
               <a
                 href="#contact"
                 id="hero-cta-get-started"
-                className="inline-flex items-center justify-between gap-3 sm:gap-4 bg-[#c8e600] hover:bg-[#d8f41e] text-[#0a1615] font-extrabold text-xs sm:text-sm uppercase tracking-wider py-3 sm:py-3.5 pl-6 sm:pl-7 pr-2.5 sm:pr-3 rounded-full shadow-2xl transition-all duration-200 hover:scale-[1.03]"
+                className="inline-flex items-center justify-between gap-3 sm:gap-4 bg-[#c8e600] hover:bg-[#d8f41e] text-[#0a1615] font-extrabold text-xs sm:text-sm uppercase tracking-wider py-2.5 sm:py-3.5 pl-5 sm:pl-7 pr-2 sm:pr-3 rounded-full shadow-2xl transition-all duration-200 hover:scale-[1.03]"
               >
                 <span>GET STARTED NOW</span>
-                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#0a1615] text-[#c8e600] flex items-center justify-center text-xs sm:text-sm font-mono font-bold">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#0a1615] text-[#c8e600] flex items-center justify-center text-xs sm:text-sm font-mono font-bold">
                   →
                 </div>
               </a>
@@ -66,7 +66,7 @@ export default function Hero() {
               <a
                 href="tel:7032208012"
                 id="hero-cta-call"
-                className="inline-flex sm:hidden items-center gap-2 bg-white/10 text-white font-extrabold text-xs uppercase tracking-wider py-3 px-5 rounded-full border border-white/20 backdrop-blur-md"
+                className="inline-flex sm:hidden items-center gap-2 bg-[#0a1615]/80 text-white font-extrabold text-xs uppercase tracking-wider py-2.5 px-4 rounded-full border border-white/20 backdrop-blur-md"
               >
                 <svg className="w-3.5 h-3.5 fill-current text-[#c8e600]" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
